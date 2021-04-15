@@ -66,6 +66,9 @@
 							{{ $item['negative'] }}
 						</span>
 					</a>
+					<a href="/vote/delete/{{ $item['id'] }}" class="btn btn-outline-danger mr-3">
+						Удалить
+					</a>
 				</div>
 				<!-- КОНЕЦ: Тело карточки -->
 			</div>

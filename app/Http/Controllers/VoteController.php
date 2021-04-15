@@ -39,4 +39,11 @@ class VoteController extends Controller {
         $vote = Vote::where('id', $id)->first();
         return view('show_vote', ['vote' => $vote]);
     }
+
+    public function delete($id) {
+        $vote = Vote::where('id', $id)->first();
+        $vote->destroy($id);
+        $vote->save();
+        return back();
+    }
 }

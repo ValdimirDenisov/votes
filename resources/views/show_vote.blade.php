@@ -65,6 +65,9 @@
 						{{$vote['negative']}}
 					</span>
 				</a>
+				<a href="/vote/delete/{{ $vote['id'] }}" class="btn btn-outline-danger mr-3">
+					Удалить
+				</a>
 			</div>
 			<!-- КОНЕЦ: Панель кнопочек -->
 			
