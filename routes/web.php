@@ -12,12 +12,17 @@ use App\veg;
 |
 */
 
-Route::get('/', 'VoteController@showAll');
-Route::get('/vote/positive_inc/{id}', 'VoteController@increasePositive');
-Route::get('/vote/negative_inc/{id}', 'VoteController@increaseNegative');
-Route::post('/vote/create', 'VoteController@create');
-Route::get('/vote/show/{id}', 'VoteController@view_vote');
-Route::get('/vote/delete/{id}', 'VoteController@delete');
+// Route::get('/', 'VoteController@showAll');
+// Route::get('/vote/positive_inc/{id}', 'VoteController@increasePositive');
+// Route::get('/vote/negative_inc/{id}', 'VoteController@increaseNegative');
+// Route::post('/vote/create', 'VoteController@create');
+// Route::get('/vote/show/{id}', 'VoteController@view_vote');
+// Route::get('/vote/delete/{id}', 'VoteController@delete');
+Route::get('/', function () {
+    return view('spa');
+});
+
+
 
 Route::get('/vote/create', function() {
     return view('create_vote');

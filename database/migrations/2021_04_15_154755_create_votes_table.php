@@ -19,15 +19,11 @@ class CreateVotesTable extends Migration
             $table->text('text');
             $table->integer('positive');
             $table->integer('negative');
+            $table->string('img');
             $table->timestamps();
         });
     }
 
-    /**
-     * Reverse the migrations.
-     *
-     * @return void
-     */
     public function down()
     {
         Schema::dropIfExists('votes');

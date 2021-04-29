@@ -60,6 +60,10 @@
 					<label>Текст описания</label>
 					<textarea class="form-control" rows="5" name="text"></textarea>
 				</div>
+				<div class="form-group">
+					<label>Картинка</label>
+					<input type="file" class="form-control" name="title">
+				</div>
 				@csrf
 				<button type="submit" class="btn btn-outline-success">Открыть голосование</button>
 			</form>
